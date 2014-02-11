@@ -378,10 +378,13 @@ font-family: 'Carme', sans-serif;
     color: #fff;
     background: rgba(61, 75, 84,0.5);
     font-size: 0.9em;
-    margin: 2px;
+    margin: 2px 2px 2px -4px;
     border: 1px solid rgba(255,255,255,0.05);
     padding: 8px 30px;
     transition: background ease-out 0.4s;
+}
+#men ul li:first-child{
+    margin: 2px;
 }
 #men li:hover{
     background: rgba(61, 75, 84,1);
@@ -410,6 +413,10 @@ h3{
 #fi section{
     background: rgba(0, 0, 0,0.3);
     width: 20%;
+    margin-left: -4px;
     display: inline-block;
     height: 100px;
+}
+#fi section:first-child{
+    margin: 0;
 }

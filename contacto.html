@@ -1,0 +1,14 @@
+<section id="contc">
+    <section id="linea"><img src="img/cont.png"/> </section>
+    <section id="textoc">
+        <form name="form1" method="post">
+            <input type="text" name="nombre" value="Nombre"   onclick="if(this.value=='Nombre') this.value=''"    onblur="if(this.value=='') this.value='Nombre'" required />
+            <input type="email" name="email" value="Email"   onclick="if(this.value=='Email') this.value=''"    onblur="if(this.value=='') this.value='Email'" required />
+            <input type="text" name="telefono" value="Telefono"   onclick="if(this.value=='Telefono') this.value=''"    onblur="if(this.value=='') this.value='Telefono'" required />
+            <textarea name="mensaje"  onclick="if(this.value=='Comentarios') this.value=''" onblur="if(this.value=='') this.value='Comentarios'">Comentarios</textarea>
+            <div class="ultimo">
+                <button id="envio" class="boton_envio">Enviar Mensaje</button>
+            </div>
+        </form>
+    </section>
+</section>

@@ -1,0 +1,81 @@
+<section id="contmas">
+    <section id="ilus" class="segunda">
+        <span><a target="_blank" href="campo/">Campo</a></span>
+    </section>
+    <section id="web" class="segunda">
+        <span><a target="_blank" href="pasa/">Moda</a></span>
+    </section>
+    <section id="edit" class="segunda">
+        <span><a target="_blank" href="campo/"></a></span>
+    </section>
+    <section id="branding" class="segunda">
+        <span><a target="_blank" href="campo/"></a></span>
+    </section>
+</section>
+<script>
+    $('.primera').mouseenter(function(){
+        $(this).stop(true, true).addClass('agrandar').siblings().addClass('reducir');
+    });
+    $('.primera').mouseleave(function(){
+        $(this).stop(true, true).removeClass('agrandar').siblings().removeClass('reducir');
+    });
+    $('#bweb').click(function(){
+        if($('#cinco').hasClass('moverder')){
+            $('#cinco').removeClass('moverder');
+        }
+        if($('#seis').hasClass('moverder')){
+            $('#seis').removeClass('moverder');
+        }
+        if($('#siete').hasClass('moverder')){
+            $('#siete').removeClass('moverder');
+        }
+       $('#cuatro').addClass('moverder');
+       $('#cuatro').load('web.html');
+        $('html').css('overflow-y','hidden');
+    });
+    $('#bilus').click(function(){
+        if($('#cuatro').hasClass('moverder')){
+            $('#cuatro').removeClass('moverder');
+        }
+        if($('#seis').hasClass('moverder')){
+            $('#seis').removeClass('moverder');
+        }
+        if($('#siete').hasClass('moverder')){
+            $('#siete').removeClass('moverder');
+        }
+       $('#cinco').addClass('moverder');
+       $('#cinco').load('ilus.html');
+        $('html').css('overflow-y','hidden');
+    });
+    $('#bedit').click(function(){
+        if($('#cuatro').hasClass('moverder')){
+            $('#cuatro').removeClass('moverder');
+        }
+        if($('#cinco').hasClass('moverder')){
+            $('#cinco').removeClass('moverder');
+        }
+        if($('#siete').hasClass('moverder')){
+            $('#siete').removeClass('moverder');
+        }
+       $('#seis').addClass('moverder');
+       $('#seis').load('edit.html');
+        $('html').css('overflow-y','hidden');
+    });
+    $('#bbrand').click(function(){
+        if($('#cuatro').hasClass('moverder')){
+            $('#cuatro').removeClass('moverder');
+        }
+        if($('#cinco').hasClass('moverder')){
+            $('#cinco').removeClass('moverder');
+        }
+        if($('#seis').hasClass('moverder')){
+            $('#seis').removeClass('moverder');
+        }
+       $('#siete').addClass('moverder');
+       $('#siete').load('brand.html');
+        $('html').css('overflow-y','hidden');
+    });
+    $('.boton').click(function(){
+       $('#contw').addClass('reducon');     
+    });
+</script>

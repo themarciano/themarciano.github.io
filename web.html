@@ -1,0 +1,50 @@
+<section class="contweb testrailvisible">
+    <section id="centrar">
+        <div class="muestra"><div id="unow"></div></div>
+        <div class="muestra"><div id="dosw"></div></div>
+        <div class="muestra"><div id="tresw"></div></div>
+        <div class="muestra"><div id="cuatrow"></div></div>
+        <div class="muestra"><div id="cincow"></div></div>
+        <div class="muestra"><div id="seisw"></div></div>
+    </section>
+    <div id="cerrarweb"></div>
+</section>
+<script>
+    $('.testrailvisible').slimscroll({
+				  width: 'auto',
+				  railVisible: true,
+				  allowPageScroll: true,
+				  touchScrollStep: 20
+			  });
+    $('#cerrarweb').click(function(){
+        if($('#cuatro').hasClass('moverder')){
+            $('#cuatro').removeClass('moverder');
+        }
+       $('#contw').removeClass('reducon');
+        $('html').css('overflow', 'inherit');    
+    });
+    $('#unow').click(function(){
+       $('#web1').addClass('aparecer');
+       $('#web1').load('sigma.html');
+    });
+    $('#dosw').click(function(){
+       $('#web1').addClass('aparecer')
+       $('#web1').load('apertura.html');
+    });
+    $('#tresw').click(function(){
+       $('#web1').addClass('aparecer')
+       $('#web1').load('consultores.html');
+    });
+    $('#cuatrow').click(function(){
+       $('#web1').addClass('aparecer')
+       $('#web1').load('dropway.html');
+    });
+    $('#cincow').click(function(){
+       $('#web1').addClass('aparecer')
+       $('#web1').load('stalker.html');
+    });
+    $('#seisw').click(function(){
+       $('#web1').addClass('aparecer')
+       $('#web1').load('web1.html');
+    });
+</script>

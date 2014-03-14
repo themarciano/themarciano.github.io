@@ -1,0 +1,42 @@
+<section class="contilus testrailvisible">
+    <section id="centrar">
+        <div class="muestra"><div id="unoi" data-0="background-position:0px 0px;" data-300="background-position:0px -20px"></div></div>
+        
+        <div class="muestra"><div id="tresi" data-0="background-position:0px 0px;" data-300="background-position:0px -20px"></div></div>
+        <div class="muestra"><div id="cuatroi" data-0="background-position:0px 0px;" data-300="background-position:0px -20px"></div></div>
+    </section>
+    <div id="cerrarilus"></div>
+</section>
+<script>
+$('.testrailvisible').slimscroll({
+				  width: 'auto',
+				  railVisible: true,
+				  allowPageScroll: true,
+				  touchScrollStep: 20
+			  });
+</script>
+<script>
+    $('#cerrarilus').click(function(){
+        if($('#cinco').hasClass('moverder')){
+            $('#cinco').removeClass('moverder');
+        }
+       $('#contw').removeClass('reducon');
+        $('html').css('overflow', 'inherit');
+    });
+    $('#unoi').click(function(){
+       $('#ilus1').addClass('aparecer');
+       $('#ilus1').load('ilus1.html');
+    });
+    $('#dosi').click(function(){
+       $('#ilus1').addClass('aparecer')
+       $('#ilus1').load('ilus2.html');
+    });
+    $('#tresi').click(function(){
+       $('#ilus1').addClass('aparecer')
+       $('#ilus1').load('ilus3.html');
+    });
+    $('#cuatroi').click(function(){
+       $('#ilus1').addClass('aparecer')
+       $('#ilus1').load('ilus4.html');
+    });
+</script>

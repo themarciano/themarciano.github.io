@@ -1,0 +1,46 @@
+<section class="contedit testrailvisible">
+    <section id="centrar">
+        <div class="muestra"><div id="unoe"></div></div>
+        <div class="muestra"><div id="trese"></div></div>
+    </section>
+    <div id="cerraredit"></div>
+</section>
+<script>
+$('.testrailvisible').slimscroll({
+				  width: 'auto',
+				  railVisible: true,
+				  allowPageScroll: true,
+				  touchScrollStep: 20
+			  });
+    $('#cerraredit').click(function(){
+        if($('#seis').hasClass('moverder')){
+            $('#seis').removeClass('moverder');
+        }
+       $('#contw').removeClass('reducon');
+        $('html').css('overflow', 'inherit');
+    });
+    $('#unoe').click(function(){
+       $('#edit1').addClass('aparecer');
+       $('#edit1').load('edit1.html');
+    });
+    $('#dose').click(function(){
+       $('#edit1').addClass('aparecer');
+       $('#edit1').load('edit2.html');
+    });
+    $('#trese').click(function(){
+       $('#edit1').addClass('aparecer');
+       $('#edit1').load('edit3.html');
+    });
+     $('#cuatroe').click(function(){
+       $('#edit1').addClass('aparecer');
+       $('#edit1').load('edit4.html');
+    });
+    $('#cincoe').click(function(){
+       $('#edit1').addClass('aparecer');
+       $('#edit1').load('edit5.html');
+    });
+    $('#seise').click(function(){
+       $('#edit1').addClass('aparecer');
+       $('#edit1').load('edit6.html');
+    });
+</script>

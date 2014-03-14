@@ -1,0 +1,114 @@
+<section id="contw">
+    <section id="web" class="primera">
+        <span>Diseño Web</span>
+        <section class="sombra">
+        <section class="pinfo">
+            <article>
+                Algunos de los sitios que he desarrollado.
+            </article>
+            <div id="bweb" class="boton">Ver</div>
+        </section>
+        </section>
+    </section>
+    <!--<section id="ilus" class="primera">
+        <span>Ilustración</span>
+        <section class="sombra">
+        <section class="pinfo">
+            <article>
+                Ilustraciones de proyectos pasados, algunos personales.
+            </article>
+            <div id="bilus" class="boton">Ver</div>
+        </section>
+        </section>
+    </section>
+    <section id="edit" class="primera">
+        <span>Editorial</span>
+        <section class="sombra">
+        <section class="pinfo">
+            <article>
+                Trabajos editoriales, algunos para carrera de diseño.
+            </article>
+            <div id="bedit" class="boton">Ver</div>
+        </section>
+        </section>
+    </section>-->
+    <section id="branding" class="primera">
+        <span>Identidad</span>
+        <section class="sombra">
+        <section class="pinfo">
+            <article>
+                Logotipos diseñados para algunas empresas.
+            </article>
+            <div id="bbrand" class="boton">Ver</div>
+        </section>
+        </section>
+    </section>
+</section>
+<script>
+    
+    $('.primera').mouseenter(function(){
+        $(this).stop(true, true).addClass('agrandar').siblings().addClass('reducir');
+    });
+    $('.primera').mouseleave(function(){
+        $(this).stop(true, true).removeClass('agrandar').siblings().removeClass('reducir');
+    });
+    $('#bweb').click(function(){
+        if($('#cinco').hasClass('moverder')){
+            $('#cinco').removeClass('moverder');
+        }
+        if($('#seis').hasClass('moverder')){
+            $('#seis').removeClass('moverder');
+        }
+        if($('#siete').hasClass('moverder')){
+            $('#siete').removeClass('moverder');
+        }
+       $('#cuatro').addClass('moverder');
+       $('#cuatro').load('web.html');
+        $('html').css('overflow-y','hidden');
+    });
+    $('#bilus').click(function(){
+        if($('#cuatro').hasClass('moverder')){
+            $('#cuatro').removeClass('moverder');
+        }
+        if($('#seis').hasClass('moverder')){
+            $('#seis').removeClass('moverder');
+        }
+        if($('#siete').hasClass('moverder')){
+            $('#siete').removeClass('moverder');
+        }
+       $('#cinco').addClass('moverder');
+       $('#cinco').load('ilus.html');
+        $('html').css('overflow-y','hidden');
+    });
+    $('#bedit').click(function(){
+        if($('#cuatro').hasClass('moverder')){
+            $('#cuatro').removeClass('moverder');
+        }
+        if($('#cinco').hasClass('moverder')){
+            $('#cinco').removeClass('moverder');
+        }
+        if($('#siete').hasClass('moverder')){
+            $('#siete').removeClass('moverder');
+        }
+       $('#seis').addClass('moverder');
+       $('#seis').load('edit.html');
+        $('html').css('overflow-y','hidden');
+    });
+    $('#bbrand').click(function(){
+        if($('#cuatro').hasClass('moverder')){
+            $('#cuatro').removeClass('moverder');
+        }
+        if($('#cinco').hasClass('moverder')){
+            $('#cinco').removeClass('moverder');
+        }
+        if($('#seis').hasClass('moverder')){
+            $('#seis').removeClass('moverder');
+        }
+       $('#siete').addClass('moverder');
+       $('#siete').load('brand.html');
+        $('html').css('overflow-y','hidden');
+    });
+    $('.boton').click(function(){
+       $('#contw').addClass('reducon');     
+    });
+</script>

@@ -1,0 +1,55 @@
+<section class="contbran testrailvisible">
+    <section id="centrar">
+        <div class="muestra"><div id="unob"></div></div>
+        <div class="muestra"><div id="dosb"></div></div>
+        <div class="muestra"><div id="tresb"></div></div>
+        <div class="muestra"><div id="cuatrob"></div></div>
+        <div class="muestra"><div id="cincob"></div></div>
+        <div class="muestra"><div id="sieteb"></div></div>
+        <div class="muestra"><div id="seisb"></div></div>
+    </section>
+    <div id="cerrarbrand"></div>
+</section>
+<script>
+$('.testrailvisible').slimscroll({
+				  width: 'auto',
+				  railVisible: true,
+				  allowPageScroll: true,
+				  touchScrollStep: 20
+			  });
+    $('#cerrarbrand').click(function(){
+        if($('#siete').hasClass('moverder')){
+            $('#siete').removeClass('moverder');
+        }
+       $('#contw').removeClass('reducon');
+        $('html').css('overflow', 'inherit');
+    });
+    $('#unob').click(function(){
+       $('#bran1').addClass('aparecer');
+       $('#bran1').load('bran1.html');
+    });
+    $('#dosb').click(function(){
+       $('#bran1').addClass('aparecer')
+       $('#bran1').load('bran2.html');
+    });
+    $('#tresb').click(function(){
+       $('#bran1').addClass('aparecer')
+       $('#bran1').load('bran3.html');
+    });
+    $('#cuatrob').click(function(){
+       $('#bran1').addClass('aparecer')
+       $('#bran1').load('bran4.html');
+    });
+    $('#sieteb').click(function(){
+       $('#bran1').addClass('aparecer')
+       $('#bran1').load('bran6.html');
+    });
+    $('#seisb').click(function(){
+       $('#bran1').addClass('aparecer')
+       $('#bran1').load('bran7.html');
+    });
+    $('#cincob').click(function(){
+       $('#bran1').addClass('aparecer')
+       $('#bran1').load('bran5.html');
+    });
+</script>

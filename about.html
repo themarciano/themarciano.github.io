@@ -1,0 +1,30 @@
+<section id="conta">
+    <div id="imagena" data-0="background-position:0px 0px;" data-400="background-position:-150 0">
+        <div id="fotoc" title="Click to see socialmedia"></div>
+        <div id="social">
+            <a href="http://facebook.com" target="_blank"><div class="sociales" id="facebook"></div></a>
+            <a href="http://twitter.com" target="_blank"><div class="sociales" id="twitter"></div></a>
+        </div>
+    </div>
+    <section id="textoa">
+        
+        <p>Soy egresado de la Escuela de Artes Plásticas Rubén Herrera de la carrera de diseño gráfico.</p><p>
+Como requisito para la titulación es necesario realizar prácticas profesionales las cuales hice en la empresa Grupo empresarial Syfors durante 4 meses, aquí fue donde aprendí los conocimientos básicos para el diseño y desarrollo de sitios web. Cuando terminé las horas necesarias para las prácticas profesionales fui contratado por la empresa. Después de trabajar ahí me dedique a realizar sitios web de manera freelancer. Ahora estoy trabajando en Instintos creativos que se dedica al desarrollo de sitios web de pequeños y medianos negocios.</p><p>
+Tengo conocimientos en HTML, CSS, además adaptación de sitios para dispositivos móviles (Responsive web design), Javascript (Jquery), manejo de la suite de Adobe (Photoshop, Illustrator, Fireworks, Indesign, Dreamweaver, Flash).
+</p>
+    </section>
+</section>
+<script>
+skrollr.init({
+    forceHeight: false
+});
+</script>
+<script>
+    $('#fotoc').click(function(){
+        if($('#twitter, #facebook').hasClass('socialesg')){
+           $('#twitter, #facebook').removeClass('socialesg'); 
+        }else{
+            $('#twitter, #facebook').addClass('socialesg');
+        };
+    });
+</script>

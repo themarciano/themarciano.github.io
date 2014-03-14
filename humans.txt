@@ -1,13 +1,15 @@
 # humanstxt.org/
-
-Powered by Ivan Felix
-
-   ifv_rste [at] hotmail.com
+# The humans responsible & technology colophon
 
 # TEAM
 
-    Ivan Felix - Web Designer - ivanfelix.55 [at] gmail.com
+    <name> -- <role> -- <twitter>
 
 # THANKS
 
-    Agradecemos a Grupo Vanguardia y el Museo de las Aves por la oportunidad.
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
